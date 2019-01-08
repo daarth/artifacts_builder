@@ -1,10 +1,6 @@
-services: 
- - docker
+services:
+- docker
 script:
- - . ./get_scripts.src
- - ./make_client.sh
- - ./make_server.sh
-deploy:
-  on:
-    tags: true
-
+- ". ./get_scripts.src"
+- "./make_client.sh"
+- "./make_server.sh"
